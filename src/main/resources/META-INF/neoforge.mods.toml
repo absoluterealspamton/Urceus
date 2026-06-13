@@ -1,23 +1,21 @@
-# src/main/resources/META-INF/neoforge.mods.toml
 modLoader="javafml"
-loaderVersion="[21,)"
+loaderVersion="[21.1,)"
 license="MIT"
-issueTrackerURL="https://github.com/urceus/ucg-mod/issues"
+
 [[mods]]
 modId="ucg"
 version="${file.jarVersion}"
 displayName="Urceus Command Generator"
-description="Advanced client-side command generator with 13 generators, QoL features, and easter eggs"
+description="Client-side command generator"
 authors="Urceus"
-credits="NeoForge team, Minecraft community"
-displayURL="https://github.com/urceus/ucg-mod"
-logoFile="assets/ucg/icon.png"
+
 [[dependencies.ucg]]
 modId="neoforge"
 mandatory=true
 versionRange="[21.1,)"
 ordering="NONE"
 side="CLIENT"
+
 [[dependencies.ucg]]
 modId="minecraft"
 mandatory=true
