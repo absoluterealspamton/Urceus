@@ -1,0 +1,37 @@
+plugins {
+    id "java"
+    id "eclipse"
+    id "idea"
+    id "org.jetbrains.kotlin.jvm" version "1.9.20"
+    id "net.neoforged.moddev" version "1.0.1" // Подключили официальный плагин NeoForge
+}
+
+group = "com.urceus.ucg"
+version = "1.0.42"
+java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+
+repositories {
+    mavenCentral()
+}
+
+// Указываем плагину, какую версию Майнкрафта скачать
+neoForm {
+    version = "1.21.1-20240808.144430" 
+}
+
+dependencies {
+    implementation "com.google.code.gson:gson:2.10.1"
+    implementation "org.apache.commons:commons-lang3:3.14.0"
+}
+
+tasks.named("jar") {
+    manifest {
+        attributes(
+            "Implementation-Title": "Urceus Command Generator",
+            "Implementation-Version": "1.0.42",
+            "Implementation-Vendor": "Urceus",
+            "NeoForge-Version": "21.1.0",
+            "Mixin-Configs": "ucg.mixins.json"
+        )
+    }
+}

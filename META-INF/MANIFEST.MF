@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: Urceus Command Generator
+Specification-Target: Java 21
+Specification-Version: 1.0.0
+Implementation-Title: ucg.Urceus Command Generator
+Implementation-Version: 1.0.0
+Implementation-Target: Java 21
+

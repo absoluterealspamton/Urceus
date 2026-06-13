@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "ucg"
+version = "1.0.0"
+displayName = "Urceus Command Generator"
+description = '''Urceus Command Generator - A powerful command generator GUI for Minecraft.'''
+credits = "Created by Urceus"
+authors = "Urceus"
+logoFile = ""
+
+[[dependencies.ucg]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.231,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ucg]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1]"
+ordering = "NONE"
+side = "BOTH"
